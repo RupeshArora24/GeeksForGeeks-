@@ -1,0 +1,32 @@
+Question Link -->
+https://practice.geeksforgeeks.org/problems/number-of-occurrence2259/1?utm_source=geeksforgeeks&utm_medium=ml_article_practice_tab&utm_campaign=article_practice_tab
+
+Code1 --> 
+from collections import Counter #User function Template for python3
+class Solution:
+
+	def count(self,arr, n, x):
+	    arr1=Counter(arr)
+		# code here
+        for i in arr:
+            if i==x:
+                return(arr1.get(x))
+        return(0)        
+
+Code2 -->
+
+#User function Template for python3
+from collections import Counter
+class Solution:
+
+    def count(self,arr, n, x):
+        # code here
+        arr1=Counter(arr)
+        if x in arr1:
+            return(arr1.get(x))
+        else: 
+            return(0)
+        
+        
+        return(arr2[x-1])
+        
