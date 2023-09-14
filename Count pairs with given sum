@@ -1,0 +1,18 @@
+Quetion Link --> 
+https://practice.geeksforgeeks.org/problems/count-pairs-with-given-sum5022/1?utm_source=geeksforgeeks&utm_medium=ml_article_practice_tab&utm_campaign=article_practice_tab
+
+Code-->
+class Solution:
+    def getPairsCount(self, arr, n, k):
+       count=0 
+       dic=dict()
+       for i,j in enumerate(arr):
+         if k-j in dic:
+             count+=dic[k-j]
+         if j in dic :
+          dic[j]+=1
+         else:
+           dic[j]=1
+     
+               
+       return(count)       
